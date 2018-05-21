@@ -1,0 +1,43 @@
+<header>
+    <h1>Welcome to Burger Bar!</h1>
+    <img src="/assets/img/burger.png" alt="burger" class="burger-image">
+</header>
+
+<section>
+    <div class="order-form">
+        <form>
+            <textarea id="burger-name" placeholder="What burger would you like to order?"></textarea>
+            <br>
+            <button type="submit" id="order-button">Order Burger</button>
+        </form>
+        <p id="error"></p>
+    </div>
+
+    <div class="burgers-area">
+        <div>
+            <h2 class="area-title">On Your Plate</h2>
+            <hr>
+            <ol>
+                {{#each burgers}} {{#unless devoured}}
+                <li class="burger-item">{{burger_name}} <button data-id="{{id}}" class="devour-button">Devour</button></li>
+                {{/unless}} {{/each}}
+            </ol>
+        </div>
+        
+        <div>
+            <h2 class="area-title">In Your Belly</h2>
+            <hr>
+            <ul>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        <li class="burger-item">{{burger_name}}</li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <a href="/api/burgers">All Burgers</a>
+</footer>
