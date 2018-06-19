@@ -11,6 +11,6 @@ Click the "Devour" button next to any burger on your plate to get it into your b
 
 :hamburger: :hamburger: :hamburger: :hamburger: :hamburger:
 
-Now go devour some burgers [here](https://arcane-wildwood-33090.herokuapp.com/)!
+Now go devour some burgers [here](https://burger-bar-nu.herokuapp.com/)!
 
 ![Burger gif](https://media3.giphy.com/media/IgOEWPOgK6uVa/giphy.gif)
